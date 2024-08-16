@@ -13,6 +13,17 @@
 
 .strong-drk-blu-theme {
 
+    .brand-title {
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+
+        img {
+            height: 50px;
+            width: 50px;
+        }
+    }
+
     a,
     .text-light {
         color: var(--light) !important
