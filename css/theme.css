@@ -48,6 +48,18 @@
     }
 }
 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+    .brand-title img {
+        height: 40px;
+        width: 50px;
+    }
+
+    .brand-title h1 {
+        font-size: 2.25rem;
+    }
+}
+
 .strong-drk-blu-theme {
 
     .brand-title {
