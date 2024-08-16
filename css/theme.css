@@ -1,0 +1,101 @@
+:root {
+    --th_primary: #132166;
+    --th_secondary: #F6F6F6;
+    --th_ternary: #ff6347;
+    --th_secondary1: #2832a1;
+    --dark: #152440;
+}
+
+
+/**
+* Dark blue theme
+*/
+
+.strong-drk-blu-theme {
+
+    a,
+    .text-light {
+        color: var(--light) !important
+    }
+
+    .btn-outline-primary, 
+    .btn-outline-primary.disabled,
+    .btn-link,
+    .nav-link,
+    .page-link,
+    .link-primary,
+    .text-primary,
+    .navbar-light .navbar-nav .nav-link.active {
+        color: var(--th_primary) !important;
+    }
+
+    .text-dark,
+    .btn-secondary {
+        color: var(--dark) !important;
+    }
+
+    .nav-link:hover,
+    .btn-primary:hover,
+    .btn-secondary:hover {
+        color: var(--th_ternary) !important;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: var(--th_primary) !important;
+    }
+
+
+
+    .btn-dark,
+    .bg-dark {
+        background-color: var(--th_primary) !important;
+    }
+
+
+    .form-check-input:checked, 
+    .form-check-input[type="checkbox"]:indeterminate, 
+    .btn-primary,
+    .btn-primary.disabled,
+    .btn-outline-primary,
+    .btn-outline-primary:hover,
+    .btn-outline-primary.dropdown-toggle.show,
+    .page-item.active .page-link,
+    .list-group-item.active,
+    .border-primary {
+        border-color: var(--th_primary) !important;
+    }
+
+    .team-item .team-text::after {
+        border-color: transparent transparent transparent  var(--th_secondary1) !important;
+    }
+
+
+    .form-check-input:checked,
+    .form-check-input[type="checkbox"]:indeterminate,
+    .form-range::-webkit-slider-thumb,
+    /* .form-range::-moz-range-thumb, */
+    .btn-primary,
+    .btn-primary.disabled,
+    .btn-outline-primary:hover,
+    .btn-outline-primary.dropdown-toggle.show,
+    .dropdown-item:active,
+    .dropdown-menu-dark .dropdown-item:active,
+    .nav-pills .show > .nav-link,
+    .page-item.active .page-link,
+    .progress-bar,
+    .list-group-item.active,
+    .bg-primary,
+    .testimonial-carousel .owl-nav .owl-prev,
+    .testimonial-carousel .owl-nav .owl-next {
+        background-color: var(--th_primary) !important;
+    }
+
+    .top-shape::before {
+        background-color: var(--th_primary) !important;
+    }
+
+    a.back-to-top {
+        background-color: var(--th_secondary1) !important;
+    }
+
+}
