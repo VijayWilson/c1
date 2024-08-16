@@ -16,7 +16,7 @@
     .brand-title {
         display: flex;
         flex-direction: row;
-        column-gap: 10px;
+        column-gap: 5px;
     }
 
     .brand-title img {
@@ -64,8 +64,8 @@
     /* Extra large devices (large desktops, 1200px and up) */
     @media (max-width: 1200px) {
         .brand-title img {
-            height: 40px;
-            width: 50px;
+            height: 44px;
+            width: 53px;
         }
     
         .brand-title h1 {
