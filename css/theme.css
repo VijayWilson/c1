@@ -49,6 +49,12 @@
 }
 
 .strong-drk-blu-theme {
+
+    .brand-title {
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+    } 
     
     a,
     .text-light {
