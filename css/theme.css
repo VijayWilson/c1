@@ -1,9 +1,7 @@
 :root {
     --th_primary: #132166;
-    --th_secondary: #F6F6F6;
+    --th_secondary: #2832a1;
     --th_ternary: #ff6347;
-    --th_secondary1: #2832a1;
-    --dark: #152440;
 }
 
 
@@ -127,7 +125,7 @@
     }
 
     .team-item .team-text::after {
-        border-color: transparent transparent transparent  var(--th_secondary1) !important;
+        border-color: transparent transparent transparent  var(--th_secondary) !important;
     }
 
 
@@ -156,7 +154,7 @@
     }
 
     a.back-to-top {
-        background-color: var(--th_secondary1) !important;
+        background-color: var(--th_secondary) !important;
     }
 
 }
