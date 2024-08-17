@@ -80,8 +80,8 @@
     /* Extra large devices (large desktops, 1200px and up) */
     @media (max-width: 1200px) {
         .brand-title img {
-            height: 44px;
-            width: 53px;
+            height: 65px;
+            width: 75px;
         }
     
         .brand-title h1 {
