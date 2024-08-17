@@ -19,7 +19,7 @@
 
     .brand-title img {
         height: 60px;
-        width: 80px;
+        width: 75px;
     }
 
     .brand-title div {
@@ -113,7 +113,9 @@
 
     .nav-link:hover,
     .btn-primary:hover,
-    .btn-secondary:hover {
+    .btn-secondary:hover,
+    .testimonial-carousel .owl-nav .owl-prev:hover,
+    .testimonial-carousel .owl-nav .owl-next:hover {
         color: var(--th_ternary) !important;
     }
 
