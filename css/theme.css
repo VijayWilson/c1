@@ -40,6 +40,16 @@
         text-align: center;
     }
 
+    .carousel-item-center {
+        text-align: center;
+        background-color: var(--light);
+    }
+
+    .carousel-item-center> img {
+        height: 90vh;
+        width: 50vw !important;
+    }
+
     /* Media Queries for Responsiveness */
     /* Small devices (landscape phones, 576px and up) */
     @media (max-width: 576px) {
@@ -86,6 +96,11 @@
     
         .brand-title h1 {
             font-size: 2.25rem;
+        }
+
+        .carousel-item-center> img {
+            height: 45vh;
+            width: 80vw !important;
         }
     }
 
