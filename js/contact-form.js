@@ -31,7 +31,7 @@
         return {
             fullName: getElementValueById('fullName'),
             phone: getElementValueById('phone'),
-            email: getElementValueById('email'),
+            from: getElementValueById('email'),
             subject: getElementValueById('subject'),
             message: getElementValueById('message')
         }
