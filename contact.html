@@ -82,43 +82,56 @@
     </div>
     <!-- Page Header End -->
 
-
     <!-- Contact Start -->
     <div class="container-fluid bg-secondary px-0">
         <div class="row g-0">
             <div class="col-lg-6 py-6 px-5">
                 <h1 class="display-5 mb-4">Contact For Any Queries</h1>
-                <form>
-                    <div class="row g-3">
-                        <div class="col-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="form-floating-1" placeholder="John Doe">
-                                <label for="form-floating-1">Full Name</label>
+                    <form id="contactForm" novalidate>
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="fullName" required>
+                                    <label for="fullName">Full Name</label>
+                                    <div class="invalid-feedback">Full Name is required.</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="phone" pattern="^\+?\d{10,14}$" required>
+                                    <label for="phone">Phone</label>
+                                    <div class="invalid-feedback">Phone must be a valid number (max 14 digits, avoid whitespaces).</div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" required>
+                                    <label for="email">Email address</label>
+                                    <div class="invalid-feedback">Invalid email address.</div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" required>
+                                    <label for="subject">Subject</label>
+                                    <div class="invalid-feedback">Subject is required.</div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Message" id="message" style="height: 150px" required></textarea>
+                                    <label for="message">Message</label>
+                                    <div class="invalid-feedback">Message is required.</div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button id="submitButton" class="btn btn-primary text-light w-100 py-3" type="submit">
+                                    <span id="submitButtonText">Submit</span>
+                                    <span id="submitButtonLoader" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                                </button>
                             </div>
                         </div>
-                        <div class="col-6">
-                            <div class="form-floating">
-                                <input type="email" class="form-control" id="form-floating-2" placeholder="name@example.com">
-                                <label for="form-floating-2">Email address</label>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="form-floating-3" placeholder="Subject">
-                                <label for="form-floating-3">Subject</label>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-floating">
-                                <textarea class="form-control" placeholder="Message" id="form-floating-4" style="height: 150px"></textarea>
-                                <label for="form-floating-4">Message</label>
-                              </div>
-                        </div>
-                        <div class="col-12">
-                            <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
-                        </div>
-                    </div>
-                </form>
+                    </form>
             </div>
             <div class="col-lg-6" style="min-height: 400px;">
                 <div class="position-relative h-100">
@@ -171,6 +184,9 @@
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
+    <!-- Toast Notification -->
+    <div id="toastContainer" class="toast-container position-fixed top-50 start-50 translate-middle p-3"></div>
+
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -181,6 +197,21 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+    <script src="js/email.js" defer></script>
+    
+    <!-- DOMPurify -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.4/purify.min.js" defer></script>
+    <script src="js/sanitize.js" defer></script>
+    
+    <!-- Alert Javascript -->
+    <script src="js/toast.js" defer></script>
+    
+    <!-- ContactForm Javascript -->
+    <script src="js/contact-form.js" defer></script>
+
 </body>
 
 </html>
