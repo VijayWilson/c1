@@ -5,9 +5,13 @@
         event.preventDefault();
         event.stopPropagation();
 
+        const recaptchaResponse = grecaptcha.getResponse();
+         
         const form = event.target;
         if (!form.checkValidity()) {
             form.classList.add('was-validated');
+        } else if (recaptchaResponse.length === 0) {
+            showToast('Please complete the reCAPTCHA.', 'danger');
         } else {
 
             showLoader(true);
@@ -18,6 +22,7 @@
                 showToast('Email sent successfully', 'success');
                 form.reset();
                 form.classList.remove('was-validated');
+                grecaptcha.reset();
             } else {
                 showToast('Failed to send email. Please try again later.', 'danger');
                 console.log(formData);
