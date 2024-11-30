@@ -126,6 +126,18 @@
         color: var(--dark) !important;
     }
 
+    .text-parent {
+        color: inherit !important;
+    }
+
+    .py-top-50 {
+        padding-top: 50px;
+    }
+    
+    .py-bottom-50 {
+        padding-bottom: 50px;
+    }
+
     .nav-link:hover,
     .btn-primary:hover,
     .btn-secondary:hover,
