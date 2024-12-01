@@ -2,6 +2,7 @@
     --th_primary: #132166;
     --th_secondary: #2832a1;
     --th_ternary: #ff6347;
+    --py_max: 90px;
 }
 
 
@@ -130,12 +131,16 @@
         color: inherit !important;
     }
 
-    .py-top-50 {
-        padding-top: 50px;
+    .cursor-pointer {
+        cursor: pointer;
+    }
+
+    .py-top {
+        padding-top: var(--py_max);
     }
     
-    .py-bottom-50 {
-        padding-bottom: 50px;
+    .py-bottom {
+        padding-bottom: var(--py_max);
     }
 
     .nav-link:hover,

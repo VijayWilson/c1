@@ -86,43 +86,37 @@
     
 
     <!-- Services Start -->
-    <div class="container-fluid py-6 px-5">
+    <div class="container-fluid py-6 px-5" style="padding-bottom: 0 !important">
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
             <h1 class="display-5 mb-0">What We Offer</h1>
             <hr class="w-25 mx-auto bg-primary">
         </div>
         <div class="row g-5">
             <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <a href="#data-entry" class="text-parent">
-                        <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                            <i class="fa fa-file-export fa-2x"></i>
-                        </div>
-                        <h3 class="mb-3">Data Entry</h3>
-                        <p class="mb-0">Efficiently transferring information from physical or digital sources into structured formats like spreadsheets, databases or specialized software applications.</p>
-                    </a>
+                <div class="service-item bg-secondary text-center px-5 cursor-pointer" id="de-btn">
+                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                        <i class="fa fa-file-export fa-2x"></i>
+                    </div>
+                    <h3 class="mb-3">Data Entry</h3>
+                    <p class="mb-0">Efficiently transferring information from physical or digital sources into structured formats like spreadsheets, databases or specialized software applications.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <a href="#medical-coding" class="text-parent">
-                        <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                            <i class="fa fa-file-medical fa-2x"></i>
-                        </div>
-                        <h3 class="mb-3">Medical Coding</h3>
-                        <p class="mb-0">Accurately converting healthcare diagnoses, procedures, and medical services into standardized alphanumeric codes for seamless medical documentation and billing.</p>
-                    </a>
+                <div class="service-item bg-secondary text-center px-5 cursor-pointer" id="mc-btn">
+                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                        <i class="fa fa-file-medical fa-2x"></i>
+                    </div>
+                    <h3 class="mb-3">Medical Coding</h3>
+                    <p class="mb-0">Accurately converting healthcare diagnoses, procedures, and medical services into standardized alphanumeric codes for seamless medical documentation and billing.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <a href="#business-process-outsourcing" class="text-parent">
-                        <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                            <i class="fa fa-globe fa-2x"></i>
-                        </div>
-                        <h3 class="mb-3">Business Process Outsourcing</h3>
-                        <p class="mb-0">Outsourcing key business tasks, operations, or processes to an external experts, allowing your organization to focus on its core activities.</p>
-                    </a>
+                <div class="service-item bg-secondary text-center px-5 cursor-pointer" id="bpo-btn">
+                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                        <i class="fa fa-globe fa-2x"></i>
+                    </div>
+                    <h3 class="mb-3">Business Process Outsourcing</h3>
+                    <p class="mb-0">Outsourcing key business tasks, operations, or processes to an external experts, allowing your organization to focus on its core activities.</p>
                 </div>
             </div>
         </div>
@@ -131,7 +125,7 @@
 
     <!-- Details Start -->
     <div class="container-fluid px-5">
-        <div class="row g-5 py-top-50" id="data-entry">
+        <div class="row g-5 py-top" id="data-entry">
             <div class="col-lg-12">
                 <h2 class="mb-4">Data Entry</h2>
                 <p>
@@ -174,7 +168,7 @@
                     </li>
             </div>
         </div>
-        <div class="row g-5 py-top-50" id="medical-coding">
+        <div class="row g-5 py-top" id="medical-coding">
             <div class="col-lg-12">
                 <h2 class="mb-4">Medical Coding</h2>
                 <p>
@@ -248,7 +242,7 @@
                     </li>
             </div>
         </div>
-        <div class="row g-5 py-top-50 py-bottom-50" id="business-process-outsourcing">
+        <div class="row g-5 py-top py-bottom" id="business-process-outsourcing">
             <div class="col-lg-12">
                 <h2 class="mb-4">Business Process Outsourcing (BPO)</h2>
                 <p>
@@ -270,7 +264,7 @@
                                     Sales and marketing.
                                 </li>
                                 <li>
-                                    Sales and marketing.
+                                    Technical support.
                                 </li>
                             </ul>
                         </p>
@@ -336,6 +330,20 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#de-btn").click(function() {
+                $("#data-entry")[0].scrollIntoView({ behavior: 'smooth' });
+            });
+            $("#mc-btn").click(function() {
+                $("#medical-coding")[0].scrollIntoView({ behavior: 'smooth' });
+            });
+            $("#bpo-btn").click(function() {
+                $("#business-process-outsourcing")[0].scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
 </body>
 
 </html>
