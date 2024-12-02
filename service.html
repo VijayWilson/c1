@@ -102,14 +102,24 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5 cursor-pointer" id="mc-btn">
+                <div class="service-item bg-secondary text-center px-5 cursor-pointer" id="mb-btn">
                     <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
                         <i class="fa fa-file-medical fa-2x"></i>
+                    </div>
+                    <h3 class="mb-3">Medical Billing</h3>
+                    <p class="mb-0">Process of sending bills to insurance companies or patients to get payment for healthcare services.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-secondary text-center px-5 cursor-pointer" id="mc-btn">
+                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                        <i class="fa fa-file-prescription fa-2x"></i>
                     </div>
                     <h3 class="mb-3">Medical Coding</h3>
                     <p class="mb-0">Accurately converting healthcare diagnoses, procedures, and medical services into standardized alphanumeric codes for seamless medical documentation and billing.</p>
                 </div>
             </div>
+            <div class="col-lg-4 col-md-6 d-none d-lg-block"></div>
             <div class="col-lg-4 col-md-6">
                 <div class="service-item bg-secondary text-center px-5 cursor-pointer" id="bpo-btn">
                     <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
@@ -164,6 +174,37 @@
                         <p>
                             While speed is important in data entry to handle large volumes of data efficiently, it must 
                             not come at the expense of accuracy.
+                        </p>
+                    </li>
+            </div>
+        </div>
+        <div class="row g-5 py-top" id="medical-billing">
+            <div class="col-lg-12">
+                <h2 class="mb-4">Medical Billing</h2>
+                <p>
+                    Medical Billing is the process of translating healthcare services provided by doctors, hospitals, 
+                    or other healthcare providers into claims and submitting them to insurance companies or patients 
+                    for reimbursement.
+                </p>
+                <h4>Key Aspects from GESSDEMN:</h4>
+                <ul>
+                    <li>
+                        <b>Patient Registration:</b>
+                        <p>
+                            Collecting and verifying patient information, including personal details and insurance coverage.
+                        </p>
+                    </li>
+                    <li>
+                        <b>Insurance Verification:</b>
+                        <p>
+                            Checking the patient’s insurance eligibility, benefits, and co-pay or deductible amounts.
+                        </p>
+                    </li>
+                    
+                    <li>
+                        <b>Denial Management:</b>
+                        <p>
+                            Handling denied or rejected claims by addressing errors, resubmitting claims, or appealing decisions.
                         </p>
                     </li>
             </div>
@@ -335,6 +376,9 @@
         $(document).ready(function() {
             $("#de-btn").click(function() {
                 $("#data-entry")[0].scrollIntoView({ behavior: 'smooth' });
+            });
+            $("#mb-btn").click(function() {
+                $("#medical-billing")[0].scrollIntoView({ behavior: 'smooth' });
             });
             $("#mc-btn").click(function() {
                 $("#medical-coding")[0].scrollIntoView({ behavior: 'smooth' });
