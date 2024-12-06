@@ -143,6 +143,10 @@
         padding-bottom: var(--py_max);
     }
 
+    .top-75 {
+        top: 75% !important;
+    }
+
     .nav-link:hover,
     .btn-primary:hover,
     .btn-secondary:hover,
